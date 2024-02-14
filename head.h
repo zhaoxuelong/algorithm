@@ -15,8 +15,28 @@
 #include <random>
 #include <memory>
 #include <set>
+#include <unordered_set>
+#include <unordered_map>
 #include <vector>
 using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+
+
+    return 0;
+}
+
+// Definition for singly-linked list.
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
+};
 
 // Definition for a binary tree node.
 struct TreeNode {
