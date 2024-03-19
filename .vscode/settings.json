@@ -4,6 +4,7 @@
         "pages.json": "jsonc",
         "iostream": "cpp",
         "cmath": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "numeric": "cpp"
     }
 }
