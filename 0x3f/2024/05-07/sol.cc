@@ -25,7 +25,28 @@ int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 
- 
+  ll n;
+  cin >> n; 
+  auto check = [&](ll k) -> bool {
+    ll m = n, s = 0;
+    while (m > k) {
+      s += k;
+      m -= k;
+      m -= m / 10;
+    }
+    return (s + m) * 2 >= n;
+  };
+  ll l = 1, r = n / 2;
+  while (l < r) {
+    ll m = (l + r) / 2;
+    if (check(m)) {
+      r = m;
+    } else {
+      l = m + 1;
+    }
+    // cerr << "(" << l << " " << m << " " << r << ")\n";
+  }
+  cout << l << "\n";
 
   return 0;
 }

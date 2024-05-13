@@ -25,7 +25,21 @@ int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 
- 
+  int n, d;
+  cin >> n >> d;
+  vector<int> a(n);
+  for (auto &x: a) {
+    cin >> x;
+  }
+  int l = 0;
+  ll ans = 0;
+  for (int i = 0; i < n; i++) {
+    while (a[l] < a[i] - d) {
+      l++;
+    }
+    ans += (ll)(i - l) * (i - l - 1) / 2;
+  }
+  cout << ans << "\n";
 
   return 0;
 }
