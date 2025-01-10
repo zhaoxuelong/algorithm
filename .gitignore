@@ -1,24 +1,4 @@
 /shelf/
-
-# 忽略编译生成的文件
-*.class
-*.o
-*.exe
-
-# 忽略编译目录
-/build/
-/dist/
-/out/
-/target/
-
-# 忽略日志和临时文件
-*.log
-*.tmp
-*.swp
-*.swo
-*.bak
-*.orig
-
-# 忽略IDE生成的文件和目录
-/.idea/
-/.vscode/
+/tmp/
+/*.sh
+/875/
