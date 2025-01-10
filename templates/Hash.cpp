@@ -1,6 +1,4 @@
-#include <vector>
-#include <random>
-using namespace std;
+#include "../head.h"
 
 // https://leetcode.cn/u/tsreaper/
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());

@@ -1,6 +1,4 @@
-#include <vector>
-#include <string>
-using namespace std;
+#include "../head.h"
 
 // Also known as "extended KMP"
 std::vector<int> z_algorithm(std::string pattern) {

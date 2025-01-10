@@ -1,4 +1,4 @@
-#include <vector>
+#include "../head.h"
 
 template <typename T>
 std::vector<T> discretization(std::vector<T> &a) {

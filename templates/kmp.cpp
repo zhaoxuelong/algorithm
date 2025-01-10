@@ -1,4 +1,4 @@
-#include <string>
+#include "../head.h"
 
 std::vector<int> calc_pi(std::string s) {
     std::vector<int> pi(s.size());

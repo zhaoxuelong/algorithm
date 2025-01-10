@@ -1,4 +1,4 @@
-#include <vector>
+#include "../head.h"
 
 template <typename T, typename Op>
 class sparse_table {

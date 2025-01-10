@@ -1,5 +1,4 @@
-#include <string>
-using namespace std;
+#include "../head.h"
 
 // https://codeforces.com/profile/tourist
 template <typename T>

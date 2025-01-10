@@ -1,4 +1,4 @@
-#include <vector>
+#include "../head.h"
 
 class union_find {
 public:
