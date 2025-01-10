@@ -1,16 +1,9 @@
-# 忽略操作系统生成的文件
-/.DS_Store
-Thumbs.db
+/shelf/
 
 # 忽略编译生成的文件
 *.class
 *.o
-*.so
-*.dll
 *.exe
-*.dylib
-*.a
-*.lib
 
 # 忽略编译目录
 /build/
@@ -26,69 +19,6 @@ Thumbs.db
 *.bak
 *.orig
 
-# 忽略环境文件和配置文件（通常包含敏感信息）
-.env
-.env.*
-.config
-config.json
-config.yml
-config.yaml
-database.yml
-
 # 忽略IDE生成的文件和目录
 /.idea/
 /.vscode/
-*.iml
-*.iws
-.project
-.classpath
-.settings/
-
-# 忽略node_modules目录（用于Node.js项目）
-/node_modules/
-
-# 忽略Python的虚拟环境目录
-/__pycache__/
-.venv/
-venv/
-env/
-
-# 忽略JUnit生成的报告文件
-*.xml
-TEST-*.xml
-
-# 忽略Docker生成的文件和目录
-/docker-compose.override.yml
-/.dockerignore
-/Dockerfile.*
-/docker-compose.*.yml
-
-# 忽略数据库文件（例如SQLite数据库）
-*.sqlite3
-*.db
-
-# 忽略其他不需要跟踪的文件和目录
-*.swp
-.DS_Store
-.gitignore.bak
-*.md~
-*.swp~
-*.idea/workspace.xml
-*.idea/tasks.xml
-*.idea/dictionaries/
-*.idea/libraries/
-
-# 忽略大型二进制文件（可选）
-# *.bin
-# *.iso
-# *.dmg
-# *.zip
-# *.rar
-# 以及其他你认为不需要跟踪的大型文件类型
-
-# 如果你想忽略所有隐藏文件（以点开头的文件），可以添加以下规则（但请谨慎使用）
-# .*
-# 但这通常不是一个好的做法，因为.gitignore文件本身就是隐藏的！
-
-# 注意：上面的规则是示例，你应该根据自己的项目需求进行调整。
-# 不要忘记在提交更改之前检查.gitignore文件是否包含了你想要忽略的所有文件和目录。
