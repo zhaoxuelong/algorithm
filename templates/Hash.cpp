@@ -11,12 +11,12 @@ int rnd(int x, int y) {
 
 int MOD = 998244353 + rnd(0, 1e9), BASE = 233 + rnd(0, 1e3);
 
-struct HashSeq {
+struct string_hash {
     vector<long long> P, H;
 
-    HashSeq() {}
+    string_hash() {}
 
-    HashSeq(string &s) {
+    string_hash(string &s) {
         int n = s.size();
         P.resize(n + 1);
         P[0] = 1;

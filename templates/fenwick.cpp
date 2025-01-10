@@ -12,32 +12,32 @@ int index(std::vector<T> &sorted, T v) {
     return std::ranges::lower_bound(sorted, v) - sorted.begin();
 }
 template <typename T>
-class fenwick {
+class fenwick_tree {
 public:
-    explicit fenwick(int n = -1) {
+    explicit fenwick_tree(int n = -1) {
         if (n > 0) {
             reset(n);
         }
     }
     void reset(int n) {
-        tree.assign(n, T());
+        data.assign(n, T());
     }
     void add(int x, T v) {
-        while (x < tree.size()) {
-            tree[x] += v;
+        while (x < data.size()) {
+            data[x] += v;
             x |= x + 1;
         }
     }
     T sum(int x) {
         T ans{};
         while (x >= 0) {
-            ans += tree[x];
+            ans += data[x];
             x = (x & (x + 1)) - 1;
         }
         return ans;
     }
 private:
-    std::vector<T> tree;
+    std::vector<T> data;
 };
 struct Node {
 
@@ -46,4 +46,3 @@ struct Node {
         return c;
     }
 };
-fenwick<int> fw;

@@ -18,15 +18,13 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <vector>
-typedef int64_t ll;
 using namespace std;
 
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 
- 
+
 
   return 0;
 }
-

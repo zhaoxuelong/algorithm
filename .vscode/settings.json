@@ -5,6 +5,12 @@
         "iostream": "cpp",
         "cmath": "cpp",
         "vector": "cpp",
-        "numeric": "cpp"
-    }
+        "numeric": "cpp",
+        "ios": "cpp",
+        "unordered_set": "cpp",
+        "queue": "cpp",
+        "algorithm": "cpp",
+        "forward_list": "cpp"
+    },
+    "cmake.configureOnOpen": false
 }
